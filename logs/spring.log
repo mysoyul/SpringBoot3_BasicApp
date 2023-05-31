@@ -8104,3 +8104,46 @@ Unconditional classes:
 2023-05-31T15:08:28.422+09:00  INFO 22368 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-05-31T15:08:28.431+09:00  INFO 22368 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
 2023-05-31T15:08:28.444+09:00  INFO 22368 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2023-05-31T15:14:42.508+09:00  INFO 1372 --- [restartedMain] c.b.m.Myspringboot3AppApplication        : Starting Myspringboot3AppApplication using Java 17 with PID 1372 (C:\SpringBoot3_App\myspringboot3-app\target\classes started by vega2 in C:\SpringBoot3_App\myspringboot3-app)
+2023-05-31T15:14:42.531+09:00  INFO 1372 --- [restartedMain] c.b.m.Myspringboot3AppApplication        : The following 1 profile is active: "prod"
+2023-05-31T15:14:42.662+09:00  INFO 1372 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-05-31T15:14:42.662+09:00  INFO 1372 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-05-31T15:14:45.358+09:00  INFO 1372 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-31T15:14:45.541+09:00  INFO 1372 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 161 ms. Found 2 JPA repository interfaces.
+2023-05-31T15:14:47.099+09:00  INFO 1372 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-05-31T15:14:47.118+09:00  INFO 1372 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-05-31T15:14:47.118+09:00  INFO 1372 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-31T15:14:47.257+09:00  INFO 1372 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-05-31T15:14:47.260+09:00  INFO 1372 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4592 ms
+2023-05-31T15:14:47.595+09:00  INFO 1372 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-05-31T15:14:47.758+09:00  INFO 1372 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@72bb2dcd
+2023-05-31T15:14:47.763+09:00  INFO 1372 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-05-31T15:14:47.795+09:00  INFO 1372 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-05-31T15:14:48.155+09:00  INFO 1372 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-31T15:14:48.280+09:00  INFO 1372 --- [restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-31T15:14:48.962+09:00  INFO 1372 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2023-05-31T15:14:48.964+09:00  WARN 1372 --- [restartedMain] o.h.o.deprecation                        : HHH90000026: MariaDB103Dialect has been deprecated; use org.hibernate.dialect.MariaDBDialect instead
+2023-05-31T15:14:50.369+09:00  INFO 1372 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-31T15:14:50.382+09:00  INFO 1372 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-31T15:14:51.253+09:00  WARN 1372 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-31T15:14:51.584+09:00  INFO 1372 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-05-31T15:14:52.609+09:00  INFO 1372 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-31T15:14:52.621+09:00  INFO 1372 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-05-31T15:14:52.770+09:00  INFO 1372 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-31T15:14:52.801+09:00  INFO 1372 --- [restartedMain] c.b.m.Myspringboot3AppApplication        : Started Myspringboot3AppApplication in 11.39 seconds (process running for 13.088)
+2023-05-31T15:14:52.816+09:00  INFO 1372 --- [restartedMain] c.b.m.r.DataBaseRunner                   : DataSource 구현 클래스명 = com.zaxxer.hikari.HikariDataSource
+2023-05-31T15:14:52.818+09:00  INFO 1372 --- [restartedMain] c.b.m.r.DataBaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-05-31T15:14:52.819+09:00  INFO 1372 --- [restartedMain] c.b.m.r.DataBaseRunner                   : DB Username = boot
+2023-05-31T15:14:52.820+09:00  INFO 1372 --- [restartedMain] c.b.m.r.DataBaseRunner                   : DB Proudct Name = MariaDB(ver=10.3.11-MariaDB)
+2023-05-31T15:14:52.820+09:00  INFO 1372 --- [restartedMain] c.b.m.r.MyApplicationRunner              : MyBootProperties Age = 48
+2023-05-31T15:14:52.820+09:00  INFO 1372 --- [restartedMain] c.b.m.r.MyApplicationRunner              : MyBootProperties FullName = Spring Prod Env Boot
+2023-05-31T15:14:52.820+09:00  INFO 1372 --- [restartedMain] c.b.m.r.MyApplicationRunner              : VM Argument foo : false
+2023-05-31T15:14:52.821+09:00  INFO 1372 --- [restartedMain] c.b.m.r.MyApplicationRunner              : Application Argument bar : true
+2023-05-31T15:14:53.568+09:00  INFO 1372 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 34fecff80a31
+2023-05-31T15:14:53.639+09:00  INFO 1372 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-31T15:14:53.640+09:00  INFO 1372 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-05-31T15:14:53.642+09:00  INFO 1372 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2023-05-31T15:21:04.373+09:00  WARN 1372 --- [http-nio-8080-exec-7] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.zaxxer.hikari.pool.HikariPool
+2023-05-31T15:25:25.794+09:00  INFO 1372 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-31T15:25:25.804+09:00  INFO 1372 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2023-05-31T15:25:25.814+09:00  INFO 1372 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
