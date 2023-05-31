@@ -10,10 +10,12 @@
         <tr>
             <th>Name</th>
             <th>Email</th>
+            <th>Edit</th>
         </tr>
         <tr th:each="user : ${users}">
             <td th:text="${user.name}"></td>
             <td th:text="${user.email}"></td>
+            <td><a th:href="@{/edit/{id}(id=${user.id})}">update</a></td>
         </tr>
     </table>
     <p>
