@@ -15,8 +15,7 @@ public class UserRestController {
     private final UserService userService;
 
     @PostMapping
-    public Long save(@RequestBody User userEntity) {
-        return userService.insert(userEntity).getId();
+    public User save(@RequestBody User userEntity) {
+        return userService.insert(userEntity);
     }
-
 }
