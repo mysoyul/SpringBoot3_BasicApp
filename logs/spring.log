@@ -8193,3 +8193,186 @@ This generated password is for development use only. Your security configuration
 2023-05-31T15:28:22.436+09:00  INFO 23132 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-05-31T15:28:22.437+09:00  INFO 23132 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
 2023-05-31T15:28:22.442+09:00  INFO 23132 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 4 ms
+2023-05-31T15:40:50.513+09:00  INFO 23132 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-05-31T15:40:50.550+09:00  INFO 23132 --- [Thread-5] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-05-31T15:40:50.553+09:00  INFO 23132 --- [Thread-5] o.a.c.c.C.[.[.[/]                        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-05-31T15:40:50.598+09:00  INFO 23132 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-31T15:40:50.608+09:00  INFO 23132 --- [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2023-05-31T15:40:50.620+09:00  INFO 23132 --- [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2023-05-31T15:40:51.066+09:00  INFO 23132 --- [restartedMain] c.b.m.Myspringboot3AppApplication        : Starting Myspringboot3AppApplication using Java 17 with PID 23132 (C:\SpringBoot3_App\myspringboot3-app\target\classes started by vega2 in C:\SpringBoot3_App\myspringboot3-app)
+2023-05-31T15:40:51.069+09:00  INFO 23132 --- [restartedMain] c.b.m.Myspringboot3AppApplication        : The following 1 profile is active: "prod"
+2023-05-31T15:40:52.436+09:00  INFO 23132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-31T15:40:52.485+09:00  INFO 23132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 2 JPA repository interfaces.
+2023-05-31T15:40:53.005+09:00  INFO 23132 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-05-31T15:40:53.007+09:00  INFO 23132 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-05-31T15:40:53.008+09:00  INFO 23132 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-31T15:40:53.231+09:00  INFO 23132 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-05-31T15:40:53.232+09:00  INFO 23132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2157 ms
+2023-05-31T15:40:53.398+09:00  INFO 23132 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Starting...
+2023-05-31T15:40:53.440+09:00  INFO 23132 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-2 - Added connection org.mariadb.jdbc.Connection@6fdafd94
+2023-05-31T15:40:53.441+09:00  INFO 23132 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Start completed.
+2023-05-31T15:40:53.441+09:00  INFO 23132 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-05-31T15:40:53.578+09:00  INFO 23132 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-31T15:40:53.606+09:00  INFO 23132 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2023-05-31T15:40:53.607+09:00  WARN 23132 --- [restartedMain] o.h.o.deprecation                        : HHH90000026: MariaDB103Dialect has been deprecated; use org.hibernate.dialect.MariaDBDialect instead
+2023-05-31T15:40:53.779+09:00  INFO 23132 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-31T15:40:53.782+09:00  INFO 23132 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-31T15:40:54.065+09:00  WARN 23132 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-31T15:40:54.237+09:00  INFO 23132 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-05-31T15:40:54.747+09:00  INFO 23132 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-05-31T15:40:54.769+09:00  INFO 23132 --- [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4f766f5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@f0c57ff, org.springframework.security.web.context.SecurityContextHolderFilter@201537c1, org.springframework.security.web.header.HeaderWriterFilter@7ede9d30, org.springframework.web.filter.CorsFilter@94a3b15, org.springframework.security.web.csrf.CsrfFilter@20d3353c, org.springframework.security.web.authentication.logout.LogoutFilter@674277d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4a298d36, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@22ccd941, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6f598f66, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6a71808a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@19d68c2a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2871f662, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@50269cb6, org.springframework.security.web.access.ExceptionTranslationFilter@61aa079d, org.springframework.security.web.access.intercept.AuthorizationFilter@65d3c085]
+2023-05-31T15:40:54.901+09:00  INFO 23132 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-31T15:40:54.984+09:00  INFO 23132 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-31T15:40:55.001+09:00  INFO 23132 --- [restartedMain] c.b.m.Myspringboot3AppApplication        : Started Myspringboot3AppApplication in 4.125 seconds (process running for 767.817)
+2023-05-31T15:40:55.004+09:00  INFO 23132 --- [restartedMain] c.b.m.r.DataBaseRunner                   : DataSource 구현 클래스명 = com.zaxxer.hikari.HikariDataSource
+2023-05-31T15:40:55.008+09:00  INFO 23132 --- [restartedMain] c.b.m.r.DataBaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-05-31T15:40:55.009+09:00  INFO 23132 --- [restartedMain] c.b.m.r.DataBaseRunner                   : DB Username = boot
+2023-05-31T15:40:55.009+09:00  INFO 23132 --- [restartedMain] c.b.m.r.DataBaseRunner                   : DB Proudct Name = MariaDB(ver=10.3.11-MariaDB)
+2023-05-31T15:40:55.009+09:00  INFO 23132 --- [restartedMain] c.b.m.r.MyApplicationRunner              : MyBootProperties Age = 63
+2023-05-31T15:40:55.009+09:00  INFO 23132 --- [restartedMain] c.b.m.r.MyApplicationRunner              : MyBootProperties FullName = Spring Prod Env Boot
+2023-05-31T15:40:55.010+09:00  INFO 23132 --- [restartedMain] c.b.m.r.MyApplicationRunner              : VM Argument foo : false
+2023-05-31T15:40:55.010+09:00  INFO 23132 --- [restartedMain] c.b.m.r.MyApplicationRunner              : Application Argument bar : true
+2023-05-31T15:40:55.014+09:00  INFO 23132 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-05-31T15:40:55.129+09:00  INFO 23132 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 34fecff80a31
+2023-05-31T15:40:55.131+09:00  INFO 23132 --- [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-31T15:40:55.131+09:00  INFO 23132 --- [http-nio-8080-exec-3] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-05-31T15:40:55.133+09:00  INFO 23132 --- [http-nio-8080-exec-3] o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2023-05-31T15:42:04.475+09:00  INFO 23132 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-05-31T15:42:04.509+09:00  INFO 23132 --- [Thread-7] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-05-31T15:42:04.510+09:00  INFO 23132 --- [Thread-7] o.a.c.c.C.[.[.[/]                        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-05-31T15:42:04.525+09:00  INFO 23132 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-31T15:42:04.527+09:00  INFO 23132 --- [Thread-7] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown initiated...
+2023-05-31T15:42:04.532+09:00  INFO 23132 --- [Thread-7] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown completed.
+2023-05-31T15:42:04.842+09:00  INFO 23132 --- [restartedMain] c.b.m.Myspringboot3AppApplication        : Starting Myspringboot3AppApplication using Java 17 with PID 23132 (C:\SpringBoot3_App\myspringboot3-app\target\classes started by vega2 in C:\SpringBoot3_App\myspringboot3-app)
+2023-05-31T15:42:04.844+09:00  INFO 23132 --- [restartedMain] c.b.m.Myspringboot3AppApplication        : The following 1 profile is active: "prod"
+2023-05-31T15:42:05.849+09:00  INFO 23132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-31T15:42:05.882+09:00  INFO 23132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 2 JPA repository interfaces.
+2023-05-31T15:42:06.137+09:00  INFO 23132 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-05-31T15:42:06.138+09:00  INFO 23132 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-05-31T15:42:06.138+09:00  INFO 23132 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-31T15:42:06.233+09:00  INFO 23132 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-05-31T15:42:06.234+09:00  INFO 23132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1385 ms
+2023-05-31T15:42:06.296+09:00  INFO 23132 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Starting...
+2023-05-31T15:42:06.306+09:00  INFO 23132 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-3 - Added connection org.mariadb.jdbc.Connection@31a21c1a
+2023-05-31T15:42:06.306+09:00  INFO 23132 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Start completed.
+2023-05-31T15:42:06.307+09:00  INFO 23132 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-05-31T15:42:06.476+09:00  INFO 23132 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-31T15:42:06.507+09:00  INFO 23132 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2023-05-31T15:42:06.508+09:00  WARN 23132 --- [restartedMain] o.h.o.deprecation                        : HHH90000026: MariaDB103Dialect has been deprecated; use org.hibernate.dialect.MariaDBDialect instead
+2023-05-31T15:42:06.660+09:00  INFO 23132 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-31T15:42:06.661+09:00  INFO 23132 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-31T15:42:06.827+09:00  WARN 23132 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-31T15:42:06.944+09:00  INFO 23132 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-05-31T15:42:07.227+09:00  WARN 23132 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 9d91c2e4-4a5a-404e-9eb0-f760de71eb5b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-05-31T15:42:07.248+09:00  INFO 23132 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-05-31T15:42:07.262+09:00  INFO 23132 --- [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4d2dc227, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@21dea015, org.springframework.security.web.context.SecurityContextHolderFilter@2ac569fd, org.springframework.security.web.header.HeaderWriterFilter@49587c28, org.springframework.web.filter.CorsFilter@5b6fa347, org.springframework.security.web.csrf.CsrfFilter@2e13b1b2, org.springframework.security.web.authentication.logout.LogoutFilter@3ed603d2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@deee4a5, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@60739aca, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@196070d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4802542b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@19e8c336, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6a401296, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2209c1e2, org.springframework.security.web.access.ExceptionTranslationFilter@4e97a994, org.springframework.security.web.access.intercept.AuthorizationFilter@28b117b1]
+2023-05-31T15:42:07.338+09:00  INFO 23132 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-31T15:42:07.372+09:00  INFO 23132 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-31T15:42:07.390+09:00  INFO 23132 --- [restartedMain] c.b.m.Myspringboot3AppApplication        : Started Myspringboot3AppApplication in 2.683 seconds (process running for 840.206)
+2023-05-31T15:42:07.395+09:00  INFO 23132 --- [restartedMain] c.b.m.r.DataBaseRunner                   : DataSource 구현 클래스명 = com.zaxxer.hikari.HikariDataSource
+2023-05-31T15:42:07.396+09:00  INFO 23132 --- [restartedMain] c.b.m.r.DataBaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-05-31T15:42:07.397+09:00  INFO 23132 --- [restartedMain] c.b.m.r.DataBaseRunner                   : DB Username = boot
+2023-05-31T15:42:07.397+09:00  INFO 23132 --- [restartedMain] c.b.m.r.DataBaseRunner                   : DB Proudct Name = MariaDB(ver=10.3.11-MariaDB)
+2023-05-31T15:42:07.398+09:00  INFO 23132 --- [restartedMain] c.b.m.r.MyApplicationRunner              : MyBootProperties Age = 3
+2023-05-31T15:42:07.398+09:00  INFO 23132 --- [restartedMain] c.b.m.r.MyApplicationRunner              : MyBootProperties FullName = Spring Prod Env Boot
+2023-05-31T15:42:07.398+09:00  INFO 23132 --- [restartedMain] c.b.m.r.MyApplicationRunner              : VM Argument foo : false
+2023-05-31T15:42:07.399+09:00  INFO 23132 --- [restartedMain] c.b.m.r.MyApplicationRunner              : Application Argument bar : true
+2023-05-31T15:42:07.402+09:00  INFO 23132 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-05-31T15:42:07.461+09:00  INFO 23132 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 34fecff80a31
+2023-05-31T15:42:07.464+09:00  INFO 23132 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-31T15:42:07.464+09:00  INFO 23132 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-05-31T15:42:07.468+09:00  INFO 23132 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 4 ms
+2023-05-31T15:49:29.081+09:00  INFO 23132 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (1 addition, 0 deletions, 1 modification)
+2023-05-31T15:49:29.109+09:00  INFO 23132 --- [Thread-11] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-05-31T15:49:29.111+09:00  INFO 23132 --- [Thread-11] o.a.c.c.C.[.[.[/]                        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-05-31T15:49:29.125+09:00  INFO 23132 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-31T15:49:29.127+09:00  INFO 23132 --- [Thread-11] c.z.h.HikariDataSource                   : HikariPool-3 - Shutdown initiated...
+2023-05-31T15:49:29.132+09:00  INFO 23132 --- [Thread-11] c.z.h.HikariDataSource                   : HikariPool-3 - Shutdown completed.
+2023-05-31T15:49:29.381+09:00  INFO 23132 --- [restartedMain] c.b.m.Myspringboot3AppApplication        : Starting Myspringboot3AppApplication using Java 17 with PID 23132 (C:\SpringBoot3_App\myspringboot3-app\target\classes started by vega2 in C:\SpringBoot3_App\myspringboot3-app)
+2023-05-31T15:49:29.383+09:00  INFO 23132 --- [restartedMain] c.b.m.Myspringboot3AppApplication        : The following 1 profile is active: "prod"
+2023-05-31T15:49:30.479+09:00  INFO 23132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-31T15:49:30.502+09:00  INFO 23132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 2 JPA repository interfaces.
+2023-05-31T15:49:30.947+09:00  INFO 23132 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-05-31T15:49:30.950+09:00  INFO 23132 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-05-31T15:49:30.951+09:00  INFO 23132 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-31T15:49:31.069+09:00  INFO 23132 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-05-31T15:49:31.070+09:00  INFO 23132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1683 ms
+2023-05-31T15:49:31.127+09:00  INFO 23132 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-4 - Starting...
+2023-05-31T15:49:31.160+09:00  INFO 23132 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-4 - Added connection org.mariadb.jdbc.Connection@32aefb42
+2023-05-31T15:49:31.161+09:00  INFO 23132 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-4 - Start completed.
+2023-05-31T15:49:31.161+09:00  INFO 23132 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-05-31T15:49:31.298+09:00  INFO 23132 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-31T15:49:31.322+09:00  INFO 23132 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2023-05-31T15:49:31.323+09:00  WARN 23132 --- [restartedMain] o.h.o.deprecation                        : HHH90000026: MariaDB103Dialect has been deprecated; use org.hibernate.dialect.MariaDBDialect instead
+2023-05-31T15:49:31.436+09:00  INFO 23132 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-31T15:49:31.437+09:00  INFO 23132 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-31T15:49:31.585+09:00  WARN 23132 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-31T15:49:32.065+09:00  INFO 23132 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-05-31T15:49:32.276+09:00  INFO 23132 --- [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-05-31T15:49:32.297+09:00  INFO 23132 --- [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5d504dc5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@64ad122, org.springframework.security.web.context.SecurityContextHolderFilter@19e919be, org.springframework.security.web.header.HeaderWriterFilter@797c4562, org.springframework.web.filter.CorsFilter@431cad, org.springframework.security.web.csrf.CsrfFilter@664bf407, org.springframework.security.web.authentication.logout.LogoutFilter@4ab1eddd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5d9b7294, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@62ec8691, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@33d903bc, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@515c5ebf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@203b3d48, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@79a09b92, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6c384e67, org.springframework.security.web.access.ExceptionTranslationFilter@4103083d, org.springframework.security.web.access.intercept.AuthorizationFilter@316e536b]
+2023-05-31T15:49:32.547+09:00  INFO 23132 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-31T15:49:32.576+09:00  INFO 23132 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-31T15:49:32.618+09:00  INFO 23132 --- [restartedMain] c.b.m.Myspringboot3AppApplication        : Started Myspringboot3AppApplication in 3.347 seconds (process running for 1285.434)
+2023-05-31T15:49:32.621+09:00  INFO 23132 --- [restartedMain] c.b.m.r.DataBaseRunner                   : DataSource 구현 클래스명 = com.zaxxer.hikari.HikariDataSource
+2023-05-31T15:49:32.622+09:00  INFO 23132 --- [restartedMain] c.b.m.r.DataBaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-05-31T15:49:32.622+09:00  INFO 23132 --- [restartedMain] c.b.m.r.DataBaseRunner                   : DB Username = boot
+2023-05-31T15:49:32.623+09:00  INFO 23132 --- [restartedMain] c.b.m.r.DataBaseRunner                   : DB Proudct Name = MariaDB(ver=10.3.11-MariaDB)
+2023-05-31T15:49:32.623+09:00  INFO 23132 --- [restartedMain] c.b.m.r.MyApplicationRunner              : MyBootProperties Age = 78
+2023-05-31T15:49:32.623+09:00  INFO 23132 --- [restartedMain] c.b.m.r.MyApplicationRunner              : MyBootProperties FullName = Spring Prod Env Boot
+2023-05-31T15:49:32.623+09:00  INFO 23132 --- [restartedMain] c.b.m.r.MyApplicationRunner              : VM Argument foo : false
+2023-05-31T15:49:32.624+09:00  INFO 23132 --- [restartedMain] c.b.m.r.MyApplicationRunner              : Application Argument bar : true
+2023-05-31T15:49:32.630+09:00  INFO 23132 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) found beans named springSecurityFilterChain (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+
+   UserDetailsServiceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationManager,org.springframework.security.authentication.AuthenticationProvider,org.springframework.security.core.userdetails.UserDetailsService,org.springframework.security.authentication.AuthenticationManagerResolver,org.springframework.security.oauth2.jwt.JwtDecoder,org.springframework.security.oauth2.server.resource.introspection.OpaqueTokenIntrospector,org.springframework.security.oauth2.client.registration.ClientRegistrationRepository,org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository; SearchStrategy: all) found beans of type 'org.springframework.security.core.userdetails.UserDetailsService' userDetailsService (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2023-05-31T15:49:32.697+09:00  INFO 23132 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-31T15:49:32.698+09:00  INFO 23132 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-05-31T15:49:32.700+09:00  INFO 23132 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 34fecff80a31
+2023-05-31T15:49:32.700+09:00  INFO 23132 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2023-05-31T16:00:08.968+09:00  INFO 23132 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-31T16:00:08.969+09:00  INFO 23132 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-4 - Shutdown initiated...
+2023-05-31T16:00:08.973+09:00  INFO 23132 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-4 - Shutdown completed.

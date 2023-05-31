@@ -17,6 +17,11 @@ import java.util.Optional;
 public class UserRestController {
     private final UserService userService;
 
+    @GetMapping("/welcome")
+    public String welcome() {
+        return "Welcome this endpoint is not secure";
+    }
+
     @PostMapping
     public User save(@RequestBody User userEntity) {
         return userService.insert(userEntity);
