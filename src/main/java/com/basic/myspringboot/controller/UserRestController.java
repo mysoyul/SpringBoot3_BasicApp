@@ -4,6 +4,7 @@ import com.basic.myspringboot.entity.User;
 import com.basic.myspringboot.exception.ResourceNotFoundException;
 import com.basic.myspringboot.service.UserService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -37,4 +38,9 @@ public class UserRestController {
         return userService.update(id, userDetail);
     }
 
+    @DeleteMapping("/{id}")
+    public ResponseEntity<?> deleteUser(@PathVariable Long id) {
+        userService.delete(id);
+        return ResponseEntity.ok(id + " User Deleted...");
+    }
 }

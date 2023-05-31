@@ -42,4 +42,11 @@ public class UserService {
         existUser.setEmail(userDetail.getEmail());
         return existUser;
     }
+
+    public void delete(Long id) {
+        User user = userRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("User", "id", id));
+        userRepository.delete(user);
+    }
+
 }
