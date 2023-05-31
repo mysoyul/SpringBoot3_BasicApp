@@ -27,12 +27,14 @@ public class UserService {
         return userRepository.save(userEntity);
     }
 
+    @Transactional(readOnly = true)
     public User selectById(Long id) {
         Optional<User> optional = userRepository.findById(id);
         User existUser = optional.orElseThrow(() -> new ResourceNotFoundException("User","Id",id));
         return existUser;
     }
 
+    @Transactional(readOnly = true)
     public List<User> selectAll() {
         return userRepository.findAll();
     }
