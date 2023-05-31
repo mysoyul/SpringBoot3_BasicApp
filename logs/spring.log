@@ -2611,3 +2611,172 @@ Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema-valid
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.8.jar:6.0.8]
 	... 19 more
 
+2023-05-31T09:15:03.804+09:00  INFO 2896 --- [restartedMain] c.b.m.Myspringboot3AppApplication        : Starting Myspringboot3AppApplication using Java 17 with PID 2896 (C:\SpringBoot3_App\myspringboot3-app\target\classes started by vega2 in C:\SpringBoot3_App\myspringboot3-app)
+2023-05-31T09:15:03.823+09:00  INFO 2896 --- [restartedMain] c.b.m.Myspringboot3AppApplication        : The following 1 profile is active: "prod"
+2023-05-31T09:15:03.930+09:00  INFO 2896 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-05-31T09:15:03.931+09:00  INFO 2896 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-05-31T09:15:05.349+09:00  INFO 2896 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-31T09:15:05.433+09:00  INFO 2896 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interfaces.
+2023-05-31T09:15:06.653+09:00  INFO 2896 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-05-31T09:15:06.680+09:00  INFO 2896 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-05-31T09:15:06.681+09:00  INFO 2896 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-31T09:15:06.808+09:00  INFO 2896 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-05-31T09:15:06.813+09:00  INFO 2896 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2877 ms
+2023-05-31T09:15:06.943+09:00  INFO 2896 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-05-31T09:15:07.123+09:00  INFO 2896 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@f507022
+2023-05-31T09:15:07.126+09:00  INFO 2896 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-05-31T09:15:07.146+09:00  INFO 2896 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-05-31T09:15:07.442+09:00  INFO 2896 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-31T09:15:07.556+09:00  INFO 2896 --- [restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-31T09:15:08.078+09:00  INFO 2896 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2023-05-31T09:15:08.081+09:00  WARN 2896 --- [restartedMain] o.h.o.deprecation                        : HHH90000026: MariaDB103Dialect has been deprecated; use org.hibernate.dialect.MariaDBDialect instead
+2023-05-31T09:15:09.379+09:00  INFO 2896 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-31T09:15:09.391+09:00  INFO 2896 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-31T09:15:09.491+09:00  WARN 2896 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-31T09:15:09.999+09:00  WARN 2896 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-05-31T09:15:10.745+09:00  INFO 2896 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-31T09:15:10.837+09:00  INFO 2896 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-31T09:15:10.870+09:00  INFO 2896 --- [restartedMain] c.b.m.Myspringboot3AppApplication        : Started Myspringboot3AppApplication in 8.323 seconds (process running for 9.676)
+2023-05-31T09:15:10.878+09:00  INFO 2896 --- [restartedMain] c.b.m.r.DataBaseRunner                   : DataSource 구현 클래스명 = com.zaxxer.hikari.HikariDataSource
+2023-05-31T09:15:10.879+09:00  INFO 2896 --- [restartedMain] c.b.m.r.DataBaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-05-31T09:15:10.879+09:00  INFO 2896 --- [restartedMain] c.b.m.r.DataBaseRunner                   : DB Username = boot
+2023-05-31T09:15:10.879+09:00  INFO 2896 --- [restartedMain] c.b.m.r.DataBaseRunner                   : DB Proudct Name = MariaDB(ver=10.3.11-MariaDB)
+2023-05-31T09:15:10.879+09:00  INFO 2896 --- [restartedMain] c.b.m.r.MyApplicationRunner              : MyBootProperties Age = 81
+2023-05-31T09:15:10.880+09:00  INFO 2896 --- [restartedMain] c.b.m.r.MyApplicationRunner              : MyBootProperties FullName = Spring Prod Env Boot
+2023-05-31T09:15:10.880+09:00  INFO 2896 --- [restartedMain] c.b.m.r.MyApplicationRunner              : VM Argument foo : false
+2023-05-31T09:15:10.880+09:00  INFO 2896 --- [restartedMain] c.b.m.r.MyApplicationRunner              : Application Argument bar : true
+2023-05-31T09:16:08.324+09:00  INFO 2896 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-05-31T09:16:08.352+09:00  INFO 2896 --- [Thread-5] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-05-31T09:16:08.362+09:00  INFO 2896 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-31T09:16:08.370+09:00  INFO 2896 --- [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2023-05-31T09:16:08.376+09:00  INFO 2896 --- [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2023-05-31T09:16:08.577+09:00  INFO 2896 --- [restartedMain] c.b.m.Myspringboot3AppApplication        : Starting Myspringboot3AppApplication using Java 17 with PID 2896 (C:\SpringBoot3_App\myspringboot3-app\target\classes started by vega2 in C:\SpringBoot3_App\myspringboot3-app)
+2023-05-31T09:16:08.585+09:00  INFO 2896 --- [restartedMain] c.b.m.Myspringboot3AppApplication        : The following 1 profile is active: "prod"
+2023-05-31T09:16:09.133+09:00  INFO 2896 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-31T09:16:09.199+09:00 ERROR 2896 --- [restartedMain] o.s.b.SpringApplication                  : Application run failed
+
+java.lang.TypeNotPresentException: Type com.basic.myspringboot.entity.Account not present
+	at sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117) ~[?:?]
+	at sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125) ~[?:?]
+	at sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49) ~[?:?]
+	at sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68) ~[?:?]
+	at sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138) ~[?:?]
+	at sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49) ~[?:?]
+	at sun.reflect.generics.repository.ClassRepository.computeSuperInterfaces(ClassRepository.java:117) ~[?:?]
+	at sun.reflect.generics.repository.ClassRepository.getSuperInterfaces(ClassRepository.java:95) ~[?:?]
+	at java.lang.Class.getGenericInterfaces(Class.java:1211) ~[?:?]
+	at org.springframework.core.ResolvableType.getInterfaces(ResolvableType.java:500) ~[spring-core-6.0.8.jar:6.0.8]
+	at org.springframework.core.ResolvableType.as(ResolvableType.java:448) ~[spring-core-6.0.8.jar:6.0.8]
+	at org.springframework.data.util.TypeDiscoverer.getSuperTypeInformation(TypeDiscoverer.java:250) ~[spring-data-commons-3.0.6.jar:3.0.6]
+	at org.springframework.data.util.ClassTypeInformation.getSuperTypeInformation(ClassTypeInformation.java:36) ~[spring-data-commons-3.0.6.jar:3.0.6]
+	at org.springframework.data.util.TypeInformation.getRequiredSuperTypeInformation(TypeInformation.java:327) ~[spring-data-commons-3.0.6.jar:3.0.6]
+	at org.springframework.data.repository.core.support.DefaultRepositoryMetadata.<init>(DefaultRepositoryMetadata.java:55) ~[spring-data-commons-3.0.6.jar:3.0.6]
+	at org.springframework.data.repository.core.support.AbstractRepositoryMetadata.getMetadata(AbstractRepositoryMetadata.java:77) ~[spring-data-commons-3.0.6.jar:3.0.6]
+	at org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport.getRepositoryConfigurations(RepositoryConfigurationExtensionSupport.java:91) ~[spring-data-commons-3.0.6.jar:3.0.6]
+	at org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:163) ~[spring-data-commons-3.0.6.jar:3.0.6]
+	at org.springframework.boot.autoconfigure.data.AbstractRepositoryConfigurationSourceSupport.registerBeanDefinitions(AbstractRepositoryConfigurationSourceSupport.java:62) ~[spring-boot-autoconfigure-3.0.7.jar:3.0.7]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromRegistrars$1(ConfigurationClassBeanDefinitionReader.java:373) ~[spring-context-6.0.8.jar:6.0.8]
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:721) ~[?:?]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromRegistrars(ConfigurationClassBeanDefinitionReader.java:372) ~[spring-context-6.0.8.jar:6.0.8]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:148) ~[spring-context-6.0.8.jar:6.0.8]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120) ~[spring-context-6.0.8.jar:6.0.8]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:410) ~[spring-context-6.0.8.jar:6.0.8]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:283) ~[spring-context-6.0.8.jar:6.0.8]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:344) ~[spring-context-6.0.8.jar:6.0.8]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:115) ~[spring-context-6.0.8.jar:6.0.8]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:747) ~[spring-context-6.0.8.jar:6.0.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:565) ~[spring-context-6.0.8.jar:6.0.8]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.0.7.jar:3.0.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-3.0.7.jar:3.0.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-3.0.7.jar:3.0.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310) ~[spring-boot-3.0.7.jar:3.0.7]
+	at com.basic.myspringboot.Myspringboot3AppApplication.main(Myspringboot3AppApplication.java:15) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-3.0.7.jar:3.0.7]
+Caused by: java.lang.ClassNotFoundException: com.basic.myspringboot.entity.Account
+	at jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[?:?]
+	at jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:467) ~[?:?]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.0.7.jar:3.0.7]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:467) ~[?:?]
+	at sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114) ~[?:?]
+	... 39 more
+
+2023-05-31T09:16:12.780+09:00  INFO 2896 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-05-31T09:16:12.781+09:00  INFO 2896 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-05-31T09:16:12.790+09:00  INFO 2896 --- [restartedMain] c.b.m.Myspringboot3AppApplication        : Starting Myspringboot3AppApplication using Java 17 with PID 2896 (C:\SpringBoot3_App\myspringboot3-app\target\classes started by vega2 in C:\SpringBoot3_App\myspringboot3-app)
+2023-05-31T09:16:12.791+09:00  INFO 2896 --- [restartedMain] c.b.m.Myspringboot3AppApplication        : The following 1 profile is active: "prod"
+2023-05-31T09:16:13.498+09:00  INFO 2896 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-31T09:16:13.519+09:00  INFO 2896 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 1 JPA repository interfaces.
+2023-05-31T09:16:13.812+09:00  INFO 2896 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-05-31T09:16:13.813+09:00  INFO 2896 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-05-31T09:16:13.814+09:00  INFO 2896 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-31T09:16:13.898+09:00  INFO 2896 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-05-31T09:16:13.899+09:00  INFO 2896 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1104 ms
+2023-05-31T09:16:13.928+09:00  INFO 2896 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Starting...
+2023-05-31T09:16:13.940+09:00  INFO 2896 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-2 - Added connection org.mariadb.jdbc.Connection@2a1f2d11
+2023-05-31T09:16:13.942+09:00  INFO 2896 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Start completed.
+2023-05-31T09:16:13.943+09:00  INFO 2896 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-05-31T09:16:14.078+09:00  INFO 2896 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-31T09:16:14.104+09:00  INFO 2896 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2023-05-31T09:16:14.104+09:00  WARN 2896 --- [restartedMain] o.h.o.deprecation                        : HHH90000026: MariaDB103Dialect has been deprecated; use org.hibernate.dialect.MariaDBDialect instead
+2023-05-31T09:16:14.232+09:00  INFO 2896 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-31T09:16:14.233+09:00  INFO 2896 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-31T09:16:14.298+09:00  WARN 2896 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-31T09:16:14.620+09:00  WARN 2896 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-05-31T09:16:14.817+09:00  INFO 2896 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-31T09:16:14.839+09:00  INFO 2896 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-31T09:16:14.847+09:00  INFO 2896 --- [restartedMain] c.b.m.Myspringboot3AppApplication        : Started Myspringboot3AppApplication in 2.104 seconds (process running for 73.653)
+2023-05-31T09:16:14.849+09:00  INFO 2896 --- [restartedMain] c.b.m.r.DataBaseRunner                   : DataSource 구현 클래스명 = com.zaxxer.hikari.HikariDataSource
+2023-05-31T09:16:14.853+09:00  INFO 2896 --- [restartedMain] c.b.m.r.DataBaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-05-31T09:16:14.854+09:00  INFO 2896 --- [restartedMain] c.b.m.r.DataBaseRunner                   : DB Username = boot
+2023-05-31T09:16:14.854+09:00  INFO 2896 --- [restartedMain] c.b.m.r.DataBaseRunner                   : DB Proudct Name = MariaDB(ver=10.3.11-MariaDB)
+2023-05-31T09:16:14.855+09:00  INFO 2896 --- [restartedMain] c.b.m.r.MyApplicationRunner              : MyBootProperties Age = 88
+2023-05-31T09:16:14.855+09:00  INFO 2896 --- [restartedMain] c.b.m.r.MyApplicationRunner              : MyBootProperties FullName = Spring Prod Env Boot
+2023-05-31T09:16:14.855+09:00  INFO 2896 --- [restartedMain] c.b.m.r.MyApplicationRunner              : VM Argument foo : false
+2023-05-31T09:16:14.855+09:00  INFO 2896 --- [restartedMain] c.b.m.r.MyApplicationRunner              : Application Argument bar : true
+2023-05-31T09:16:14.857+09:00  INFO 2896 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-05-31T09:17:22.699+09:00  INFO 2896 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-05-31T09:17:22.717+09:00  INFO 2896 --- [Thread-7] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2023-05-31T09:17:22.723+09:00  INFO 2896 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-31T09:17:22.724+09:00  INFO 2896 --- [Thread-7] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown initiated...
+2023-05-31T09:17:22.728+09:00  INFO 2896 --- [Thread-7] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown completed.
+2023-05-31T09:17:22.909+09:00  INFO 2896 --- [restartedMain] c.b.m.Myspringboot3AppApplication        : Starting Myspringboot3AppApplication using Java 17 with PID 2896 (C:\SpringBoot3_App\myspringboot3-app\target\classes started by vega2 in C:\SpringBoot3_App\myspringboot3-app)
+2023-05-31T09:17:22.911+09:00  INFO 2896 --- [restartedMain] c.b.m.Myspringboot3AppApplication        : The following 1 profile is active: "prod"
+2023-05-31T09:17:23.348+09:00  INFO 2896 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-31T09:17:23.370+09:00  INFO 2896 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 1 JPA repository interfaces.
+2023-05-31T09:17:23.530+09:00  INFO 2896 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-05-31T09:17:23.531+09:00  INFO 2896 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-05-31T09:17:23.531+09:00  INFO 2896 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-31T09:17:23.587+09:00  INFO 2896 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-05-31T09:17:23.588+09:00  INFO 2896 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 673 ms
+2023-05-31T09:17:23.611+09:00  INFO 2896 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Starting...
+2023-05-31T09:17:23.619+09:00  INFO 2896 --- [restartedMain] c.z.h.p.HikariPool                       : HikariPool-3 - Added connection org.mariadb.jdbc.Connection@50dc8555
+2023-05-31T09:17:23.619+09:00  INFO 2896 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Start completed.
+2023-05-31T09:17:23.619+09:00  INFO 2896 --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***'
+2023-05-31T09:17:23.657+09:00  INFO 2896 --- [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-31T09:17:23.676+09:00  INFO 2896 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2023-05-31T09:17:23.676+09:00  WARN 2896 --- [restartedMain] o.h.o.deprecation                        : HHH90000026: MariaDB103Dialect has been deprecated; use org.hibernate.dialect.MariaDBDialect instead
+2023-05-31T09:17:23.789+09:00  INFO 2896 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-31T09:17:23.790+09:00  INFO 2896 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-31T09:17:23.847+09:00  WARN 2896 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-31T09:17:23.962+09:00  WARN 2896 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-05-31T09:17:24.100+09:00  INFO 2896 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-31T09:17:24.128+09:00  INFO 2896 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-31T09:17:24.165+09:00  INFO 2896 --- [restartedMain] c.b.m.Myspringboot3AppApplication        : Started Myspringboot3AppApplication in 1.344 seconds (process running for 142.971)
+2023-05-31T09:17:24.167+09:00  INFO 2896 --- [restartedMain] c.b.m.r.DataBaseRunner                   : DataSource 구현 클래스명 = com.zaxxer.hikari.HikariDataSource
+2023-05-31T09:17:24.168+09:00  INFO 2896 --- [restartedMain] c.b.m.r.DataBaseRunner                   : DB URL = jdbc:mariadb://127.0.0.1/boot_db?user=boot&password=***
+2023-05-31T09:17:24.168+09:00  INFO 2896 --- [restartedMain] c.b.m.r.DataBaseRunner                   : DB Username = boot
+2023-05-31T09:17:24.169+09:00  INFO 2896 --- [restartedMain] c.b.m.r.DataBaseRunner                   : DB Proudct Name = MariaDB(ver=10.3.11-MariaDB)
+2023-05-31T09:17:24.173+09:00  INFO 2896 --- [restartedMain] c.b.m.r.MyApplicationRunner              : MyBootProperties Age = 64
+2023-05-31T09:17:24.175+09:00  INFO 2896 --- [restartedMain] c.b.m.r.MyApplicationRunner              : MyBootProperties FullName = Spring Prod Env Boot
+2023-05-31T09:17:24.175+09:00  INFO 2896 --- [restartedMain] c.b.m.r.MyApplicationRunner              : VM Argument foo : false
+2023-05-31T09:17:24.175+09:00  INFO 2896 --- [restartedMain] c.b.m.r.MyApplicationRunner              : Application Argument bar : true
+2023-05-31T09:17:24.177+09:00  INFO 2896 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
