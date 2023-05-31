@@ -32,7 +32,7 @@ public class UserRestController {
         return userService.selectAll();
     }
 
-    @PutMapping("/users/{id}")
+    @PutMapping("/{id}")
     public User updateUser(@PathVariable Long id, @RequestBody User userDetail) {
         return userService.update(id, userDetail);
     }
