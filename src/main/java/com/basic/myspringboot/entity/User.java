@@ -18,7 +18,7 @@ public class User {
 
     @Column(nullable = false)
     @JacksonXmlProperty
-    @NotEmpty(message = "Name은 필수 입력항목 입니다!")
+    @NotBlank(message = "Name은 필수 입력항목 입니다!")
     private String name;
 
     @Column(unique = true, nullable = false)

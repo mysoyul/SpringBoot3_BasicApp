@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
@@ -28,7 +29,7 @@ public class UserController {
     }
 
     @GetMapping("/signup")
-    public String showSignUpForm(User user) {
+    public String showSignUpForm(User myUser) {
         return "add-user";
     }
     @PostMapping("/adduser")
@@ -37,6 +38,23 @@ public class UserController {
             return "add-user";
         }
         userService.insert(user);
+        model.addAttribute("users", userService.selectAll());
+        return "index";
+    }
+
+    @GetMapping("/edit/{id}")
+    public String showUpdateForm(@PathVariable("id") long id, Model model) {
+        User user = userService.selectById(id);
+        model.addAttribute("user", user);
+        return "update-user";
+    }
+    @PostMapping("/update/{id}")
+    public String updateUser(@PathVariable("id") long id, @Valid User user, BindingResult result, Model model) {
+        if (result.hasErrors()) {
+            user.setId(id);
+            return "update-user";
+        }
+        userService.update(id, user);
         model.addAttribute("users", userService.selectAll());
         return "index";
     }

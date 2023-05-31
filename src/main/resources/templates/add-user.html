@@ -4,6 +4,7 @@
 <body>
     <form action="#" th:action="@{/adduser}" th:object="${user}" method="post">
         <label for="name">Name</label>
+        <!--id="" name="" value="" -->
         <input type="text" th:field="*{name}" id="name">
         <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></span>
         <br/>
