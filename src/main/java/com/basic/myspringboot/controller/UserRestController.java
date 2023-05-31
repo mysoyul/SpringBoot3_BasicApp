@@ -6,6 +6,7 @@ import com.basic.myspringboot.exception.ResourceNotFoundException;
 import com.basic.myspringboot.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -28,11 +29,13 @@ public class UserRestController {
     }
 
     @GetMapping("/{id}")
+    @PreAuthorize("hasAuthority('ROLE_USER')")
     public User findUserById(@PathVariable Long id) {
         return userService.selectById(id);
     }
 
     @GetMapping
+    @PreAuthorize("hasAuthority('ROLE_ADMIN')")
     public List<User> findUsers() {
         return userService.selectAll();
     }
