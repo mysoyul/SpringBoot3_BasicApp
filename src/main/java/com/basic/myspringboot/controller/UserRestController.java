@@ -32,7 +32,7 @@ public class UserRestController {
         return userService.selectAll();
     }
 
-    @GetMapping(value="/xml", produces = { "application/xml"})
+    @GetMapping(value="/xml", produces = {"application/xml"})
     public Users getUsersXml() {
         Users users = new Users();
         users.setUsers(userService.selectAll());
