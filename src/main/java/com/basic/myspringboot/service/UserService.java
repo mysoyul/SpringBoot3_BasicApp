@@ -1,5 +1,6 @@
 package com.basic.myspringboot.service;
 
+import com.basic.myspringboot.entity.User;
 import com.basic.myspringboot.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,4 +18,9 @@ public class UserService {
 //    public UserService(UserRepository userRepository) {
 //        this.userRepository = userRepository;
 //    }
+
+    public User insert(User userEntity) {
+        return userRepository.save(userEntity);
+    }
+
 }
