@@ -27,8 +27,10 @@ public class UserService {
         return userRepository.save(userEntity);
     }
 
-    public Optional<User> selectById(Long id) {
-        return userRepository.findById(id);
+    public User selectById(Long id) {
+        Optional<User> optional = userRepository.findById(id);
+        User existUser = optional.orElseThrow(() -> new ResourceNotFoundException("User","Id",id));
+        return existUser;
     }
 
     public List<User> selectAll() {
