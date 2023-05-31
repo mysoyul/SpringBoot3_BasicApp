@@ -19,7 +19,7 @@ public class UserRestController {
         return userService.insert(userEntity);
     }
 
-    @GetMapping("/id")
+    @GetMapping("/{id}")
     public User findUserById(@PathVariable Long id) {
         Optional<User> optional = userService.selectById(id);
         User existUser = optional.orElseThrow(() -> new ResourceNotFoundException("User","Id",id));
