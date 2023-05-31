@@ -1,6 +1,7 @@
 package com.basic.myspringboot.controller;
 
 import com.basic.myspringboot.entity.User;
+import com.basic.myspringboot.entity.Users;
 import com.basic.myspringboot.exception.ResourceNotFoundException;
 import com.basic.myspringboot.service.UserService;
 import lombok.RequiredArgsConstructor;
@@ -29,6 +30,13 @@ public class UserRestController {
     @GetMapping
     public List<User> findUsers() {
         return userService.selectAll();
+    }
+
+    @GetMapping(value="/xml", produces = { "application/xml"})
+    public Users getUsersXml() {
+        Users users = new Users();
+        users.setUsers(userService.selectAll());
+        return users;
     }
 
     @PutMapping("/{id}")
