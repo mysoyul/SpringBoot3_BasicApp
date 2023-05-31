@@ -11,12 +11,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class UserController {
     private final UserService userService;
 
-    @GetMapping("/index")
+    @GetMapping("/userList")
     public String index(Model model) {
         model.addAttribute("users", userService.selectAll());
         return "index";
     }
-
 
     @GetMapping("/leaf")
     public String leaf(Model model) {
