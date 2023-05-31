@@ -6,6 +6,7 @@ import com.basic.myspringboot.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Optional;
 
 @RestController
@@ -26,5 +27,14 @@ public class UserRestController {
         return existUser;
     }
 
+    @GetMapping
+    public List<User> findUsers() {
+        return userService.selectAll();
+    }
+
+    @PutMapping("/users/{id}")
+    public User updateUser(@PathVariable Long id, @RequestBody User userDetail) {
+        return userService.update(id, userDetail);
+    }
 
 }
